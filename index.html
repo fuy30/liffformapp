@@ -47,11 +47,15 @@ const liffId = "1656759337-L7ngD1pq";
             $('form').submit(function () {
                 const name    = $('input[name="name"]').val();
                 const msg = `${name}`;
-                sendText('問題'+key);
+                sendText('問題');
                 return false;
             });
         });
+
+document.getElementById("sampleArea").innerHTML = key;
+
     </script>
+<div id="sampleArea">サンプル</div>
 
     <form class="w-75 mx-auto">
 <!--        <p class="mt-3">氏名(全角ひらがな)</p>
