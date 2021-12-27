@@ -61,7 +61,7 @@ const liffId = "1656759337-L7ngD1pq";
             $('form').submit(function () {
                 const name    = $('input[name="name"]').val();
                 const msg = `${name}`;
-                sendText('問題');
+                sendText('問題'+key);
                 return false;
             });
         });
