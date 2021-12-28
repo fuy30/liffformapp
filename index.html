@@ -12,14 +12,23 @@ const liffId = "1656759337-L7ngD1pq";
 </head>
 <body>
 <div id="sampleArea">　</div>
-<div id='aa'>aa</div>
+<div id='aa'>vv</div>
 
-<iframe width="56" height="31" src="https://www.youtube.com/embed/ZSaTxMkEHas" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<video "controls width="250">
-    <source src="https://www.youtube.com/embed/ZSaTxMkEHas"
-            type="video/mp4">
-</video>
-
+<iframe src="https://player.vimeo.com/video/66966424" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script>
+    var iframe = document.querySelector('iframe');
+    var player = new Vimeo.Player(iframe);
+    player.on('play', function() {
+        alert('You have played the video')
+    });
+        player.on('ended', function(){
+        alert('Video play completed');
+    });
+    player.getVideoTitle().then(function(title) {
+        console.log('title:', title);
+    });
+</script>
 
     <form class="w-75 mx-auto">
 <!--        <p class="mt-3">氏名(全角ひらがな)</p>
