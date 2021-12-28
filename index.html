@@ -17,11 +17,6 @@ const liffId = "1656759337-L7ngD1pq";
 <script defer src="https://linevoom.line.me/sdk/timelineJsSdk.min.js"></script>
 
     <form class="w-75 mx-auto">
-<!--        <p class="mt-3">氏名(全角ひらがな)</p>
-        <div>
-            <input class="form-control w-100 mt-1" name="name" placeholder="" required>
-        </div>
---!>
         <input type="submit" class="mt-4 btn btn-primary" value="問題へ">
     </form>
 
@@ -54,9 +49,12 @@ const liffId = "1656759337-L7ngD1pq";
                 window.alert('Failed to send message ' + error);
             });
         }
-        const params = (new URL(document.location)).searchParams;
-        const key = params.get('key');
+var param = location.search
 
+alert(param)
+<!--        const params = (new URL(document.location)).searchParams;
+        const key = params.get('key');
+--!>
         $(function () {
             $('form').submit(function () {
                 const name    = $('input[name="name"]').val();
@@ -65,11 +63,10 @@ const liffId = "1656759337-L7ngD1pq";
                 return false;
             });
         });
-<!--        function test(){
+        function test(){
             var samplearea=document.getElementById("sampleArea")
             samplearea.innerHTML = key;
         };
---!>
     </script>
 
 </body>
