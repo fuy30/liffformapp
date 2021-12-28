@@ -15,6 +15,14 @@ const liffId = "1656759337-L7ngD1pq";
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
     <script>
+        //パラメータ
+        const params = (new URL(document.location)).searchParams;
+        const key = params.get('key');
+        function test(){
+            var samplearea=document.getElementById("sampleArea")
+            samplearea.innerHTML = key;
+        };
+
         $(document).ready(function () {
             const liffId = "1656759337-L7ngD1pq";
             initializeLiff(liffId);
@@ -38,24 +46,14 @@ const liffId = "1656759337-L7ngD1pq";
                 window.alert('Failed to send message ' + error);
             });
         }
-        const params = (new URL(document.location)).searchParams;
-        const key = params.get('key');
-
         $(function () {
             $('form').submit(function () {
-                const name    = $('input[name="name"]').val();
-                const msg = `${name}`;
                 sendText('問題');
                 return false;
             });
         });
-        function test(){
-            var samplearea=document.getElementById("sampleArea")
-            samplearea.innerHTML = key;
-        };
     </script>
     <script defer src="https://linevoom.line.me/sdk/timelineJsSdk.min.js"></script>
-
 
 </head>
 <body>
