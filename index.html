@@ -50,20 +50,23 @@ const liffId = "1656759337-L7ngD1pq";
     </script>
     <script defer src="https://linevoom.line.me/sdk/timelineJsSdk.min.js"></script>
 
-    <script>
-    function test(){
-      let div1 = document.getElementById('sampleArea');
-			div1.insertAdjacentHTML('afterend', "key");
-    }
-    </script>
+
+
+
 </head>
 <body>
-    <div id="sampleArea">bbaa</div>
+    <div id="sampleArea">bb</div>
 
     <form class="w-75 mx-auto">
      <input type="submit" class="mt-4 btn btn-primary" value="問題へ">
     </form>
     <blockquote class="line_timeline_embedded_post" data-baseurl="https://linevoom.line.me" data-postid="1163920241201046620" data-writerid="_daVWSk-9cz20oQ3SaQe2IqluqSL8HUnMcD02F2k"></blockquote>
+    <script>
+    function test(){
+var sampleArea = document.getElementById("sampleArea");
+sampleArea.innerHTML = "表示したい文字列";
+}
+   </script>
 </body>
 </html>
 
