@@ -52,6 +52,7 @@ jQuery(function($){
         //パラメータ
         const params = (new URL(document.location)).searchParams;
         const key = params.get('key');
+        const key2 = params.get('key2');
         $(document).ready(function () {
             const liffId = "1656759337-L7ngD1pq";
             initializeLiff(liffId);
@@ -91,7 +92,7 @@ jQuery(function($){
 <body>
     <div class="sp">
     <div class="frame">
-       <blockquote class="line_timeline_embedded_post" data-baseurl="https://linevoom.line.me" data-postid="1163920241201046620" data-writerid="_daVWSk-9cz20oQ3SaQe2IqluqSL8HUnMcD02F2k"></blockquote>
+    <div id="voom"></div>
     </div>
     </div>
     <div id="response">bb</div>
@@ -101,6 +102,7 @@ jQuery(function($){
 
 <script>
     document.getElementById("response").innerHTML = key;
+    document.getElementById("voom").innerHTML = key2;
 </script>
 </body>
 </html>
