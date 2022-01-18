@@ -1,3 +1,4 @@
+
 <!--
 const liffId = "1656759337-L7ngD1pq";
 --!>
@@ -9,18 +10,13 @@ const liffId = "1656759337-L7ngD1pq";
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
-
     <!--フォント-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,100&family=Amatic+SC&display=swap" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&display=swap" rel="stylesheet">
 
 <style>
-body {
-    font: 15px/2.0 "Lucida Sans Unicode", "Lucida Grande", Arial, "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック",sans-serif;
-    -webkit-text-size-adjust: 100%;
-}
+
 
 #header {
     width: 100%;
@@ -49,7 +45,67 @@ body {
     width: 186px;
 }
 #header h2 {
+    padding-top: 13px;
+}
+#logo{
+font-family: 'Alegreya Sans SC', sans-serif;
+font-size: 1.5em;
+font-style: italic;
 
+}
+
+
+
+h2.title {
+    margin-bottom: 35px;
+}
+h2.title {
+    clear: both;
+    margin-bottom: 50px;
+    padding-bottom: 7px;
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+}
+h2.topFirst {
+    margin-top: 80px;
+}
+h2.title span {
+    padding-bottom: 10px;
+    border-bottom: 3px solid #000000;
+}
+
+
+
+.frame {
+  height: 0;
+  overflow: hidden;
+
+}
+.sp .frame {
+  padding-top: 100%;
+
+}
+iframe {
+  transform-origin: 0 0;
+
+}
+.sp iframe {
+  margin-top: -130%;
+  transform: scale(0.6613);
+}
+</style>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+
+
+
+<script>
+jQuery(function($){
   $(window).on('load resize', function(){
     var sp_w = $('.sp .frame').width() / 520;
     $('.sp iframe').css('transform', 'scale(' + sp_w + ')');
@@ -114,7 +170,7 @@ body {
 <h2 class="title topFirst"><span>Explanation</span></h2>
 </header>
 <div class="post">
-<p id="logoa">ABCDEFGHIJKLMNabcdefg初夏の景色ほど美しいものはない。始めは樹々の若芽が、ホームページサンプル株式会社黒々とした枝の上に緑の点を打って遠く見ると匂いやかに煙って居るが、その細かい点が日ごとに大きくなって、やがて一刷毛、黄の勝った一団の緑となるまで日々微妙な変化を示しながら、色の深さを増して行くのは、朝晩眺め尽しても飽き。五月の日に光るかなめの若葉、柿の若葉。読我書屋の狭い庭から、段々遠い林に眼をやって、更にあたりの景色に憧れ。</p>
+<p id="logoa">ABCDEFGHIJKLMNa初夏の景色ほど美しいものはない。始めは樹々の若芽が、ホームページサンプル株式会社黒々とした枝の上に緑の点を打って遠く見ると匂いやかに煙って居るが、その細かい点が日ごとに大きくなって、やがて一刷毛、黄の勝った一団の緑となるまで日々微妙な変化を示しながら、色の深さを増して行くのは、朝晩眺め尽しても飽き。五月の日に光るかなめの若葉、柿の若葉。読我書屋の狭い庭から、段々遠い林に眼をやって、更にあたりの景色に憧れ。</p>
 </div>
 
 
@@ -133,4 +189,3 @@ body {
 </script>
 </body>
 </html>
-
