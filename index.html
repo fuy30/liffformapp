@@ -4,7 +4,7 @@ const liffId = "1656759337-L7ngD1pq";
 --!>
 <html>
 <head>
-    <title> </title>
+<title> </title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Repetitive Practice In Chemistry</title>
@@ -44,14 +44,27 @@ body{
     line-height: 1.6em
 }
 
+.video{
+    position: relative;
+    margin-left:5%;
+    margin-right:5%;
+
+    padding-right:5%;
+padding-left:5%;
+    width: 90%;
+    height: auto;
+    background: #ffffff;
+}
 .box{
     position: relative;
     margin-left:5%;
     margin-right:5%;
     width: 90%;
-    height: 20%
+    height: auto;
     background: #ffffff;
+ padding-top: 5%;
 }
+
 
 #explanation{
     position: relative;
@@ -60,7 +73,7 @@ body{
     width: 90%;
     height: auto;
     background: #ffffff;
-    padding-top: 5%;
+    padding-top: 10%;
     padding-left:5%;
     padding-right:5%;
     padding-bottom:5%;
@@ -89,14 +102,14 @@ h2.title span {
 
 }
 .sp .frame {
-  padding-top: 51%;
+  padding-top: 71%;
 }
 iframe {
   transform-origin: 0 0;
 
 }
 .sp iframe {
-  margin-top: -66%;
+  margin-top: -86%;
   transform: scale(1);
 }
 
@@ -114,7 +127,7 @@ iframe {
 <script>
 jQuery(function($){
   $(window).on('load resize', function(){
-    var sp_w = $('.sp .frame').width() / ('.box').width();
+    var sp_w = $('.sp .frame').width()/ ('.box').width();
     $('.sp iframe').css('transform', 'scale(' + sp_w + ')');
   });
 });
@@ -171,18 +184,22 @@ jQuery(function($){
 
 <h2 class="title"><span>Explanation</span></h2>
 
-
 <div class="box">
+<div class="video">
     <div class="sp">
-        <div class="frame">
-            <div class="responsevideo"></div>
-        </div>
-    </div>
+    <div class="frame">
+<div class="responsevideo"></div>
+</div>
+</div>
+</div>
 </div>
 
-<div class="space"></div>
+
+
+
 <div id="explanation">
-    <div id="response"></div>
+<div id="response"></div>
+</div>
 </div>
 
 
